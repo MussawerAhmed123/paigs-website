@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PAIGS System - Login</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #00FF6A;
+            font-family: 'Roboto Condensed', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            border-bottom: 2px solid #00FF6A;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+            padding: 10px;
+            border-bottom: 1px solid #00FF6A;
+        }
+        nav a {
+            margin: 0 20px;
+            color: #00FF6A;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+        }
+        input[type="text"], input[type="password"], select {
+            width: 100%;
+            padding: 10px;
+            background-color: #111;
+            color: #00FF6A;
+            border: 1px solid #00FF6A;
+        }
+        .button {
+            background-color: #00FF6A;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .graph-section {
+            margin-top: 40px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>PAIGS - Public AI Governance System</header>
+    <nav>
+        <a href="#housing">Housing</a>
+        <a href="#job">Jobs</a>
+        <a href="#healthcare">Healthcare</a>
+        <a href="#legal">Legal</a>
+    </nav>
+    <div class="container">
+        <h2>Login to Access Services</h2>
+        <div class="form-group">
+            <label for="username">Username or ID</label>
+            <input type="text" id="username" placeholder="Enter your ID">
+        </div>
+        <div class="form-group">
+            <label for="sector">Request Sector</label>
+            <select id="sector">
+                <option value="housing">Housing Support</option>
+                <option value="job">Employment & Salary</option>
+                <option value="healthcare">Healthcare Access</option>
+                <option value="legal">Legal Aid</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="query">Enter Your Request</label>
+            <input type="text" id="query" placeholder="e.g., Need assistance with housing allocation">
+        </div>
+        <a href="/mnt/data/PAIGS_Result_Screen.html" target="_blank"><button class="button">View Results</button></a>
+
+        <div class="graph-section">
+            <h3>Live Civic Metrics (Sample Placeholder)</h3>
+            <p>- Housing Approval Rate: 65%</p>
+            <p>- Job Matching Accuracy: 78%</p>
+            <p>- Healthcare Prioritization Success: 72%</p>
+            <p>- Legal Resolution within SLA: 85%</p>
+        </div>
+    </div>
+    <div class="footer">
+        Designed by Mussawer, Nikita, Hamza, Yan — OCADU Speculative Design 2024
+    </div>
+</body>
+</html>
